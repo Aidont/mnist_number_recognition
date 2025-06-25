@@ -31,14 +31,6 @@ m, n = X_training.size()
 def make_param(*shape):
   return torch.normal(0.01, 0.03, size=shape, device = device, requires_grad = True)
 
-def make_weight(*shape):
-    w = torch.empty(*shape, device=device, requires_grad=True)
-    torch.nn.init.xavier_uniform_(w)
-    return w
-
-def make_bias(size):
-    return torch.zeros(size, device=device, requires_grad=True)
-
 lr = 0.01
 
 hidden1 = 20
