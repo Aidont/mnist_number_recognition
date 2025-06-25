@@ -1,1 +1,1 @@
-# mnist_number_recognition
+# A simple mnist classification neural net
